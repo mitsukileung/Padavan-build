@@ -231,7 +231,7 @@ jobs:
         path: /opt/images        
     - name: Upload images to Releases
       if: ${{ github.event.inputs.release == 'yes' }}
-      uses: softprops/action-gh-release@v1
+      uses: softprops/action-gh-release@master
       with:
         name: ${{ env.NAME }}
         tag_name: ${{ env.TAG }}
